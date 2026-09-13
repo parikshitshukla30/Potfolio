@@ -1,250 +1,1340 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Developer Skills</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>Parikshit Shukla | Web Developer</title>
+
+    <meta name="description"
+        content="Portfolio of Parikshit Shukla — M.Sc. IT student and Web Developer working on modern web applications.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    
+    <script type="module"
+        src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
 </head>
+
 <body>
-<div class="container">
 
-<!-- Sidebar -->
-<aside class="sidebar">
-<img src="assets/image.jpeg" class="avatar">
-<h2>PARIKSHIT SHUKLA</h2>
-<span class="tag">Front End Developer</span>
+    <!-- ================= NAVBAR ================= -->
 
-<ul class="info">
-<li><i class="fa-solid fa-location-dot"></i> CHHATTISGARH , INDIA</li>
-<li><i class="fa-solid fa-envelope"></i> parikshitshukla30@gmail.com</li>
-<li><i class="fa-brands fa-github"><a href="https://github.com/parikshitshukla30"> parikshitshukla30 </a></i> </li>
-<li><i class="fa-brands fa-linkedin"><a href="https://www.linkedin.com/in/parikshit-shukla-ps2004/"> parikshitshuklaps2004</a></i></li>
-</ul>
-</aside>
+    <header class="navbar">
+        <div class="nav-container">
 
-<!-- Main Content -->
-<main class="main">
+            <a href="#home" class="logo">
+                PS<span>.</span>
+            </a>
 
-<nav class="navbar">
-    <button class="active" onclick="show('about',this)">About</button>
-    <button onclick="show('resume',this)">Project</button>
-    <button onclick="show('Skills',this)">Skills</button>
-    <button onclick="show('contact',this)">Contact</button>
-</nav>
+            <nav class="nav-links" id="navLinks">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#certifications">Certifications</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-<!-- About -->
-<section id="about" class="section active">
-    <nav><p><<b> hello world !! </b>></P></nav>
-    <h1>Parikshit Shukla<br> Front-End Developer<br>WANT's to be a Full Stack Developer</h1>
-<p>
-MSc IT ’27 @ PRSU| Frontend Developer skilled in HTML, CSS & JavaScript. Passionate about building responsive, user-friendly websites. Always eager to learn, build, and grow </p>
+            <div class="nav-actions">
+
+                <a href="Parikshit-Shukla-Resume.pdf"
+                    class="resume-btn"
+                    target="_blank">
+                    Resume
+                </a>
+
+                <button class="menu-btn" id="menuBtn" aria-label="Open menu">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
+            </div>
+
+        </div>
+    </header>
 
 
-<!-- certification  -->
-<br>
-<nav style=" justify-content:flex-start;gap:25px; background:#434343;padding:15px 25px;border-radius:20px;">
-    <p>Certification</p>
-</nav>
+    <main>
 
-<div class="cards">    
-    <div class="card">
-        <p><img src="assets/hackersrank sql.png"> </p><br>
-            <ul>
-            <li> <p> SQL </p></li>
-            <li> <h2> hakersRank </h2></li>
-        </ul>
-    </div>       
-    <div class="card">
-        <p><img src="assets/infosis html.png"> </p><br>
-            <ul>
-            <li> <p> HTML5 </p></li>
-            <li> <h2> Infosis </h2></li> 
-        </ul>
-    </div>    
-    <div class="card">
-        <p><img src="assets/hackersrank css.png"> </p><br>
-            <ul>
-            <li> <p> CSS </p></li>
-            <li> <h2> hakersRank </h2></li>
-        </ul>
-    </div>    
-    <div class="card">
-        <p><img src="/assets/microsoft web development.png"> </p><br>
-            <ul>
-            <li> <p> Web development using VScode </p></li>
-            <li> <h2> Microsoft </h2></li>
-        </ul>
-    </div>    
-    <div class="card">
-        <p><img src="assets/microsoft .net.png"> </p><br>
-            <ul>
-            <li> <p> introduction of .net</p></li>
-            <li> <h2> Microsoft </h2></li>
-        </ul>
-    </div>    
-    <div class="card">
-        <p><img src="assets/microsoft asp.net.png"> </p><br>
-            <ul>
-            <li> <p> Web development using .net with ASP.net </p></li>
-            <li> <h2> Microsoft </h2></li>
-        </ul>
-    </div>    
-    <div class="card">
-        <p><img src="assets/sololearn ai.png "> </p><br>
-            <ul>
-            <li> <p> Reasearch with Ai </p></li>
-            <li> <h2> Sololearn </h2></li>
-        </ul>
-    </div>    
-</div>
+        <!-- ================= HERO ================= -->
 
-<br>
-<nav style=" justify-content:flex-start;gap:25px; background:#434343;padding:15px 25px;border-radius:20px;">
-  <p>Academic</p>
-</nav>
+        <section class="hero section" id="home">
 
-<div class="cards"> 
-    <!-- acedemic -->
-    <div class="card">
-        <p><b> Pt. Ravishankar Shukla University , Raipur </b></p><br>
-            <ul>
-            <li> <p> M.Sc. IT (Pursuing) </p></li>
-            <li> <p> Cgpa : 7 </p></li>
-            <li> <p> batch :2025-27 </p></li>
-        </ul>
+            <div class="hero-container" >
+
+                <div class="hero-left"  >
+
+                    <p class="eyebrow">
+                        WEB DEVELOPER
+                    </p>
+
+                    <h1>
+                        Building the web
+                        <span>one project at a time.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I'm <strong>Parikshit Shukla</strong>, an M.Sc. IT student
+                        at Pt. Ravishankar Shukla University, Raipur, focused on
+                        modern web development and moving toward full-stack
+                        MERN development with AI.
+                    </p>
+
+                    <div class="hero-buttons">
+
+                        <a href="#projects" class="btn btn-dark">
+                            View Projects
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline">
+                            Contact Me
+                        </a>
+
+                    </div>
+
+                    <div class="social-links">
+
+                        <a href="https://github.com/parikshitshukla30"
+                            target="_blank"
+                            aria-label="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="https://linkedin.com/in/parikshit-shukla-ps2004/"
+                            target="_blank"
+                            aria-label="LinkedIn">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+
+                        <a href="mailto:parikshitshukla30@gmail.com"
+                            aria-label="Email">
+                            <i class="fa-solid fa-envelope"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-model">
+                    <model-viewer
+                        src="./models/e1da8c99-8c99-46e7-85c2-e46fcdd96c06.glb"
+                        alt="My 3D Model"
+                        camera-controls
+                        auto-rotate
+                        >                    </model-viewer>
+  
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section class="about section" id="about">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span>01 / ABOUT</span>
+
+                    <h2>
+                        A developer focused on
+                        <em>building.</em>
+                    </h2>
+
+                </div>
+
+
+                <div class="about-grid">
+
+                    <div class="about-number">
+                        01
+                    </div>
+
+                    <div class="about-content">
+
+                        <p class="large-text">
+                            I work on web applications that combine
+                            clean interfaces with practical functionality.
+                        </p>
+
+                        <p>
+                            My experience includes responsive web interfaces,
+                            educational platforms, e-commerce websites and
+                            food donation systems. I have worked with
+                            JavaScript, React.js and other web technologies
+                            through internships and personal projects.
+                        </p>
+
+                        <p>
+                            My current direction is full-stack development,
+                            with a focus on the MERN stack and AI-powered
+                            web applications.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+             <div class="hero-right">
+
+                    <div class="hero-card">
+
+                        <div class="card-top">
+                            <span>01</span>
+                            <span>PROFILE</span>
+                        </div>
+
+                        <div class="initials">
+                            <img src="assets/image.png" alt="" width="100%">
+                        </div>
+
+                        <div class="hero-card-bottom">
+
+                            <div>
+                                <small>Currently</small>
+                                <strong>M.Sc. IT · 2027</strong>
+                            </div>
+
+                            <div>
+                                <small>Based in</small>
+                                <strong>Raipur, India</strong>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section class="skills section" id="skills">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span>02 / SKILLS</span>
+
+                    <h2>
+                        Tools I use to
+                        <em>build.</em>
+                    </h2>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+
+                        <span class="skill-number">01</span>
+
+                        <h3>Programming</h3>
+
+                        <div class="tags">
+                            <span>C / C++</span>
+                            <span>Python</span>
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <span class="skill-number">02</span>
+
+                        <h3>Frontend</h3>
+
+                        <div class="tags">
+                            <span>React.js</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Responsive UI</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <span class="skill-number">03</span>
+
+                        <h3>Database</h3>
+
+                        <div class="tags">
+                            <span>MySQL</span>
+                            <span>phpMyAdmin</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <span class="skill-number">04</span>
+
+                        <h3>Tools</h3>
+
+                        <div class="tags">
+                            <span>GitHub</span>
+                            <span>VS Code</span>
+                            <span>Visual Studio</span>
+                            <span>XAMPP</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <span class="skill-number">05</span>
+
+                        <h3>Platforms</h3>
+
+                        <div class="tags">
+                            <span>Netlify</span>
+                            <span>Vercel</span>
+                            <span>GitHub Pages</span>
+                            <span>Shopify</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill-card">
+
+                        <span class="skill-number">06</span>
+
+                        <h3>Core CS</h3>
+
+                        <div class="tags">
+                            <span>Data Structures</span>
+                            <span>OOP</span>
+                            <span>DBMS</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECTS ================= -->
+
+        <section class="projects section" id="projects">
+
+            <div class="section-container">
+
+                <div class="section-heading project-heading">
+
+                    <span>03 / PROJECTS</span>
+
+                    <h2>
+                        Things I've
+                        <em>built.</em>
+                    </h2>
+
+                </div>
+
+
+                <!-- PROJECT 01 -->
+
+                <article class="project">
+
+                    <div class="project-index">
+                        01
+                    </div>
+
+                    <div class="project-main">
+
+                        <div class="project-top">
+
+                            <div>
+                                <p class="project-type">
+                                    EDUCATIONAL PLATFORM
+                                </p>
+
+                                <h3>
+                                    GYANI
+                                    <span>— IKS Study Portal</span>
+                                </h3>
+                            </div>
+
+                            <a href="https://parikshitshukla30.github.io/GYANI/"
+                                target="_blank"
+                                class="project-arrow">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+
+                        <p class="project-description">
+                            An interactive educational portal designed
+                            for learning Indian Knowledge Systems through
+                            structured notes and practice questions.
+                        </p>
+
+
+                        <div class="project-features">
+
+                            <span>English / Hindi</span>
+                            <span>Dark / Light Theme</span>
+                            <span>Unit-wise Notes</span>
+                            <span>Practice Questions</span>
+                            <span>Login</span>
+                            <span>Responsive UI</span>
+
+                        </div>
+
+
+                        <div class="project-footer">
+
+                            <div class="project-tech">
+                                HTML
+                                <b>·</b>
+                                CSS
+                                <b>·</b>
+                                JavaScript
+                                <b>·</b>
+                                React.js
+                            </div>
+
+                            <a href="https://github.com/parikshitshukla30/GYANI"
+                                target="_blank">
+                                GitHub
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 02 -->
+
+                <article class="project">
+
+                    <div class="project-index">
+                        02
+                    </div>
+
+                    <div class="project-main">
+
+                        <div class="project-top">
+
+                            <div>
+                                <p class="project-type">
+                                    SOCIAL IMPACT WEB APP
+                                </p>
+
+                                <h3>
+                                    AHAAR
+                                </h3>
+                            </div>
+
+                            <span class="status">
+                                IN DEVELOPMENT
+                            </span>
+
+                        </div>
+
+
+                        <p class="project-description">
+                            A food donation platform connecting food donors
+                            such as hotels, restaurants and event halls with
+                            NGOs and animal shelters for surplus-food
+                            redistribution.
+                        </p>
+
+
+                        <div class="project-features">
+
+                            <span>Donor Workflow</span>
+                            <span>NGO Workflow</span>
+                            <span>Food Listing</span>
+                            <span>Donation Requests</span>
+                            <span>Responsive UI</span>
+
+                        </div>
+
+
+                        <div class="project-footer">
+
+                            <div class="project-tech">
+                                HTML
+                                <b>·</b>
+                                CSS
+                                <b>·</b>
+                                JavaScript
+                                <b>·</b>
+                                React.js
+                                <b>·</b>
+                                PHP
+                                <b>·</b>
+                                MySQL
+                            </div>
+
+                            <a href="https://github.com/parikshitshukla30/AHAAR"
+                                target="_blank">
+                                GitHub
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+
+                <!-- PROJECT 03 -->
+
+                <article class="project">
+
+                    <div class="project-index">
+                        03
+                    </div>
+
+                    <div class="project-main">
+
+                        <div class="project-top">
+
+                            <div>
+                                <p class="project-type">
+                                    E-COMMERCE
+                                </p>
+
+                                <h3>
+                                    Zevar & Zari
+                                </h3>
+                            </div>
+
+                            <a href="https://zevarandzari.in/"
+                                target="_blank"
+                                class="project-arrow">
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+
+                        </div>
+
+
+                        <p class="project-description">
+                            A customized Shopify e-commerce website for
+                            a fashion and ethnic-wear brand, including
+                            storefront content, product listings,
+                            collections, navigation and responsive layout.
+                        </p>
+
+
+                        <div class="project-features">
+
+                            <span>Shopify</span>
+                            <span>Product Pages</span>
+                            <span>Collections</span>
+                            <span>Cart</span>
+                            <span>Checkout</span>
+                            <span>Responsive Storefront</span>
+
+                        </div>
+
+
+                        <div class="project-footer">
+
+                            <div class="project-tech">
+                                Shopify
+                            </div>
+
+                            <a href="https://zevarandzari.in/"
+                                target="_blank">
+                                Live Website
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EXPERIENCE ================= -->
+
+        <section class="experience section" id="experience">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span>04 / EXPERIENCE</span>
+
+                    <h2>
+                        Where I gained
+                        <em>experience.</em>
+                    </h2>
+
+                </div>
+
+
+                <div class="timeline">
+
+                    <!-- EXPERIENCE 01 -->
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-date">
+                            MAY — JUL 2026
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <div class="timeline-header">
+
+                                <div>
+                                    <h3>
+                                        YashviTech IT Solutions
+                                    </h3>
+
+                                    <p>
+                                        Web Developer Intern
+                                    </p>
+                                </div>
+
+                                <span>01</span>
+
+                            </div>
+
+
+                            <ul>
+                                <li>
+                                    Developed and styled responsive web
+                                    interfaces using HTML, CSS, JavaScript
+                                    and React.js.
+                                </li>
+
+                                <li>
+                                    Worked on user-friendly layouts and
+                                    improved UI/UX and responsiveness.
+                                </li>
+
+                                <li>
+                                    Practiced debugging, testing and
+                                    browser-based optimization.
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- EXPERIENCE 02 -->
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-date">
+                            MAY 2026
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <div class="timeline-header">
+
+                                <div>
+                                    <h3>
+                                        InAmigos Foundation
+                                    </h3>
+
+                                    <p>
+                                        AI / Web Development Intern
+                                    </p>
+                                </div>
+
+                                <span>02</span>
+
+                            </div>
+
+
+                            <ul>
+                                <li>
+                                    Worked on web development tasks involving
+                                    web technologies and AI-related concepts.
+                                </li>
+
+                                <li>
+                                    Developed and improved web pages with
+                                    focus on responsive design and UX.
+                                </li>
+
+                                <li>
+                                    Gained practical exposure to integrating
+                                    AI concepts with web applications.
+                                </li>
+                            </ul>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EDUCATION ================= -->
+
+        <section class="education section" id="education">
+
+            <div class="section-container">
+
+                <div class="section-heading">
+
+                    <span>05 / EDUCATION</span>
+
+                    <h2>
+                        Academic
+                        <em>background.</em>
+                    </h2>
+
+                </div>
+
+
+                <div class="education-table">
+
+                    <div class="education-row education-header">
+                        <span>Degree</span>
+                        <span>Institution</span>
+                        <span>Year</span>
+                        <span>Result</span>
+                    </div>
+
+
+                    <div class="education-row">
+
+                        <span class="degree">
+                            M.Sc. IT
+                        </span>
+
+                        <span>
+                            Pt. Ravishankar Shukla University, Raipur
+                        </span>
+
+                        <span>
+                            2025 — 2027
+                        </span>
+
+                        <span>
+                            Appearing
+                        </span>
+
+                    </div>
+
+
+                    <div class="education-row">
+
+                        <span class="degree">
+                            B.Sc. IT
+                        </span>
+
+                        <span>
+                            Govt. Nagarjuna PG College of Science
+                        </span>
+
+                        <span>
+                            2021 — 2025
+                        </span>
+
+                        <span>
+                            62%
+                        </span>
+
+                    </div>
+
+
+                    <div class="education-row">
+
+                        <span class="degree">
+                            CGBSE XII
+                        </span>
+
+                        <span>
+                            Spring Dales Public School, Kumhari
+                        </span>
+
+                        <span>
+                            2021
+                        </span>
+
+                        <span>
+                            95%
+                        </span>
+
+                    </div>
+
+
+                    <div class="education-row">
+
+                        <span class="degree">
+                            CGBSE X
+                        </span>
+
+                        <span>
+                            Spring Dales Public School, Kumhari
+                        </span>
+
+                        <span>
+                            2019
+                        </span>
+
+                        <span>
+                            73%
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CERTIFICATIONS ================= -->
+
+<section class="section certifications" id="certifications">
+
+    <div class="section-container">
+
+        <div class="section-heading">
+            <span>06 — CERTIFICATES</span>
+
+            <h2>
+                Learning that
+                <em>has proof.</em>
+            </h2>
+        </div>
+
+
+        <div class="certificate-grid">
+
+            <!-- 01 -->
+            <a href="assets/microsoft web development.png"
+               class="certificate-card"
+               target="_blank">
+
+                <div class="certificate-image">
+                    <img src="assets/microsoft web development.png"
+                         alt="Certificate 01">
+                    
+                    <div class="certificate-overlay">
+                        <span>VIEW CERTIFICATE</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="certificate-info">
+                    <span>01</span>
+
+                    <div>
+                        <h3>Web Development</h3>
+                        <p>Microsoft</p>
+                    </div>
+                </div>
+
+            </a>
+
+
+            <!-- 02 -->
+            <a href="assets/microsoft asp.net.png"
+               class="certificate-card"
+               target="_blank">
+
+                <div class="certificate-image">
+                    <img src="assets/microsoft asp.net.png"
+                         alt="Certificate 02">
+
+                    <div class="certificate-overlay">
+                        <span>VIEW CERTIFICATE</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="certificate-info">
+                    <span>02</span>
+
+                    <div>
+                        <h3>ASP.NET Core</h3>
+                        <p>Microsoft</p>
+                    </div>
+                </div>
+
+            </a>
+
+
+            <!-- 03 -->
+            <a href="assets/microsoft generative ai.png"
+               class="certificate-card"
+               target="_blank">
+
+                <div class="certificate-image">
+                    <img src="assets/microsoft generative ai.png"
+                         alt="Certificate 03">
+
+                    <div class="certificate-overlay">
+                        <span>VIEW CERTIFICATE</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="certificate-info">
+                    <span>03</span>
+
+                    <div>
+                        <h3>Generative AI</h3>
+                        <p>Microsoft</p>
+                    </div>
+                </div>
+
+            </a>
+
+
+            <!-- 04 -->
+            <a href="assets/ibm-tcp.png"
+               class="certificate-card"
+               target="_blank">
+
+                <div class="certificate-image">
+                    <img src="assets/ibm-tcp.png"
+                         alt="Certificate 04">
+
+                    <div class="certificate-overlay">
+                        <span>VIEW CERTIFICATE</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="certificate-info">
+                    <span>04</span>
+
+                    <div>
+                        <h3>TCP/IP</h3>
+                        <p>IBM</p>
+                    </div>
+                </div>
+
+            </a>
+
+
+            <!-- 05 -->
+            <a href="assets/infosis html.png"
+               class="certificate-card"
+               target="_blank">
+
+                <div class="certificate-image">
+                    <img src="assets/infosis html.png"
+                         alt="Certificate 05">
+
+                    <div class="certificate-overlay">
+                        <span>VIEW CERTIFICATE</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="certificate-info">
+                    <span>05</span>
+
+                    <div>
+                        <h3>HTML5</h3>
+                        <p>Infosys</p>
+                    </div>
+                </div>
+
+            </a>
+
+
+            <!-- 06 -->
+            <a href="assets/hackerrank javascript.png"
+               class="certificate-card"
+               target="_blank">
+
+                <div class="certificate-image">
+                    <img src="assets/hackerrank javascript.png"
+                         alt="Certificate 06">
+
+                    <div class="certificate-overlay">
+                        <span>VIEW CERTIFICATE</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="certificate-info">
+                    <span>06</span>
+
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>HackerRank</p>
+                    </div>
+                </div>
+
+            </a>
+
+
+            <!-- 07 -->
+            <a href="assets/hackersrank css.png"
+               class="certificate-card"
+               target="_blank">
+
+                <div class="certificate-image">
+                    <img src="assets/hackersrank css.png"
+                         alt="Certificate 07">
+
+                    <div class="certificate-overlay">
+                        <span>VIEW CERTIFICATE</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="certificate-info">
+                    <span>07</span>
+
+                    <div>
+                        <h3>CSS</h3>
+                        <p>HackerRank</p>
+                    </div>
+                </div>
+
+            </a>
+
+
+            <!-- 08 -->
+            <a href="assets/hackersrank sql.png"
+               class="certificate-card"
+               target="_blank">
+
+                <div class="certificate-image">
+                    <img src="assets/hackersrank sql.png"
+                         alt="Certificate 08">
+
+                    <div class="certificate-overlay">
+                        <span>VIEW CERTIFICATE</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="certificate-info">
+                    <span>08</span>
+
+                    <div>
+                        <h3>SQL</h3>
+                        <p>HackerRank</p>
+                    </div>
+                </div>
+
+            </a>
+
+
+            <!-- 09 -->
+            <a href="assets/linkedin generative ai.png"
+               class="certificate-card"
+               target="_blank">
+
+                <div class="certificate-image">
+                    <img src="assets/linkedin generative ai.png"
+                         alt="Certificate 09">
+
+                    <div class="certificate-overlay">
+                        <span>VIEW CERTIFICATE</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="certificate-info">
+                    <span>09</span>
+
+                    <div>
+                        <h3>Generative AI</h3>
+                        <p>LinkedIn Learning</p>
+                    </div>
+                </div>
+
+            </a>
+
+
+            <!-- 10 -->
+            <a href="assets/sololearn - research with ai.jpg"
+               class="certificate-card"
+               target="_blank">
+
+                <div class="certificate-image">
+                    <img src="assets/sololearn - research with ai.jpg"
+                         alt="Certificate 10">
+
+                    <div class="certificate-overlay">
+                        <span>VIEW CERTIFICATE</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="certificate-info">
+                    <span>10</span>
+
+                    <div>
+                        <h3>Research With AI</h3>
+                        <p>SoloLearn</p>
+                    </div>
+                </div>
+
+            </a>
+
+
+            <!-- 11 -->
+            <a href="assets/ibm-webdevelopment.png"
+               class="certificate-card"
+               target="_blank">
+
+                <div class="certificate-image">
+                    <img src="assets/ibm-webdevelopment.png"
+                         alt="Certificate 11">
+
+                    <div class="certificate-overlay">
+                        <span>VIEW CERTIFICATE</span>
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </div>
+                </div>
+
+                <div class="certificate-info">
+                    <span>11</span>
+
+                    <div>
+                        <h3>Web Development</h3>
+                        <p>IBM</p>
+                    </div>
+                </div>
+
+            </a>
+
+        </div>
+
     </div>
-    <div class="card">
-        <p><b> Govt. Nagarjuna P.G. College of Science , Raipur </b></p><br>
-            <ul>
-            <li> <p> B.Sc. IT </p></li>
-            <li> <p> Cgpa : 6.3 </p></li>
-            <li> <p> Batch :2021-25 </p></li>
-        </ul>
-    </div>
-    <div class="card">
-        <p><b> Chhattisgarh Board of Secondary Education</b></p><br>
-            <ul>
-            <li> <p> Higher Secondary </p></li>
-            <li> <p> grade : 95 % </p></li>
-            <li> <p> batch :2020-21</p></li>
-        </ul>
-    </div>
-    <div class="card">
-        <p><b> Chhattisgarh Board of Secondary Education</b></p><br>
-            <ul>
-            <li> <p> Secondary </p></li>
-            <li> <p> grade : 73 % </p></li>
-            <li> <p> batch :2018-19</p></li>
-        </ul>
-    </div>
 
-</div>
 </section>
 
-<!-- Resume -->
-<section id="resume" class="section">
-<h1>PROJECT</h1>
+        <!-- ================= MISC ================= -->
 
-<div class="resume-card">
-<h1>1. AHAAR</h1>
-<p>A website for food donation & help for ngo</p><br>
-<ul>
-<li>Developed Using HTML,CSS,Js,Php,Mysql</li>
-<li>Real Time Food catagerization & Tracking Donation</li>
-<li>Volunteer System for safety</li>
-<li>food catagory :- Human / Animal / Decomposition</li>
-</ul>
-</div>
+        <section class="misc section">
 
-<div class="resume-card">
-<h1>2. Sharda Hospital</h1>
-<p>A hospital managment website for maintaining appointment , paitents & staff </p><br>
-<ul>
-<li>Developed Using HTML,CSS,Js,Php,Mysql</li>
-<li>Real Time appointment Updation</li>
-</ul>
-</div>
+            <div class="section-container">
 
-<div class="resume-card">
-<h1>3. iMAGE Gallary</h1>
-<p>A website for food donation & help for ngo</p><br>
-<ul>
-<li>Developed Using HTML,CSS,Js,Php,Mysql</li>
-<li>Real Time Food catagerization & Tracking Donation</li>
-<li>Volunteer System for safety</li>
-<li>food catagory :- Human / Animal / Decomposition</li>
-</ul>
-</div>
+                <div class="section-heading">
 
-<div class="resume-card">
-<h1>4. calculator</h1>
-<p>A website for calculation</p><br>
-<ul>
-<li>Developed Using HTML,CSS,Js</li>
-<li>it can perform simple calculation</li>
-</ul>
-</div>
+                    <span>07 / BEYOND CODE</span>
+
+                    <h2>
+                        More than just
+                        <em>projects.</em>
+                    </h2>
+
+                </div>
 
 
-<div class="resume-card">
-<h1>5. Portfolio</h1>
-<p>A website for personal portfolio</p><br>
-<ul>
-<li>Developed Using HTML,CSS,Js</li>
-<li>Personal Portfolio for get Information about me</li>
-</ul>
-</div>
+                <div class="misc-grid">
 
-</section>
-
-<!-- Skills -->
-<section id="Skills" class="section">
-<h1>Skills</h1>
-
-<div class="filters">
-<button onclick="filter('all')">All</button>
-<button onclick="filter('web')">Front-End</button>
-<button onclick="filter('Database')">Database</button>
-<button onclick="filter('tools')">Tools & other</button>
-</div>
-
-<div class="projects">
-    <div class="project web"><h3> HTML </h3><span>Web Development</span></div>
-    <div class="project web"><h3> CSS </h3><span>Web Development</span></div>
-    <div class="project web"><h3> JS </h3><span>Web Development</span></div>
-    <div class="project Database"><h3>Php</h3><span>Database Development</span></div>
-    <div class="project Database"><h3>MySQL</h3><span>Database</span></div>
-    <div class="project web"><h3> Python </h3><span>currently learning</span></div>
-    <div class="project web"><h3> React.js </h3><span>currently learning</span></div>
-    <div class="project tools"><h3>C & C++</h3><span>Data Structure  using C <br>& its ALgorithum </span></div>
-    <div class="project tools"><h3> Github </h3><span> </span></div>
-    <div class="project tools"><h3> Git</h3><span> </span></div>
-    <div class="project tools"><h3>VScode</h3><span> </span></div>
-    <div class="project tools"><h3>Netlify</h3><span> for make project live</span></div>
-    <div class="project tools"><h3>Vercel</h3><span> for make project live</span></div>
-    <div class="project tools"><h3>Phpmyadmin</h3><span> </span></div>
-</div>
-</section>
-
-<!-- Contact -->
-<section id="contact" class="section">
-<h1>Contact Me</h1>
-
-<form class="contact-form">
-<input type="text" placeholder="Your Name">
-<input type="email" placeholder="Your Email">
-<textarea rows="4" placeholder="Your Message"></textarea>
-<button type="submit">Send Message</button>
-</form>
-</section>
-</main>
-</div>
+                    <div class="misc-item">
+                        <span>01</span>
+                        <div>
+                            <h3>Prayatna 3.0</h3>
+                            <p>
+                                Participated in a 36-hour National Hackathon.
+                            </p>
+                        </div>
+                    </div>
 
 
-  <script src="script.js"></script>
+                    <div class="misc-item">
+                        <span>02</span>
+                        <div>
+                            <h3>PRSU Library Website</h3>
+                            <p>
+                                Currently contributing to the university
+                                library website with database integration.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="misc-item">
+                        <span>03</span>
+                        <div>
+                            <h3>AHAAR Development</h3>
+                            <p>
+                                Continuing to improve the AHAAR web application.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="misc-item">
+                        <span>04</span>
+                        <div>
+                            <h3>Next Direction</h3>
+                            <p>
+                                Working toward full-stack development with
+                                the MERN stack and AI.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section class="contact section" id="contact">
+
+            <div class="section-container">
+
+                <div class="contact-box">
+
+                    <div class="contact-left">
+
+                        <span>08 / CONTACT</span>
+
+                        <h2>
+                            Let's build something
+                            <em>useful.</em>
+                        </h2>
+
+                        <p>
+                            Have a project, internship opportunity or
+                            collaboration in mind? Get in touch.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-right">
+
+                        <a href="mailto:parikshitshukla30@gmail.com"
+                            class="contact-link">
+                            <span>Email</span>
+                            <strong>
+                                parikshitshukla30@gmail.com
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </strong>
+                        </a>
+
+
+                        <a href="tel:+916266384770"
+                            class="contact-link">
+                            <span>Phone</span>
+                            <strong>
+                                +91 6266384770
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </strong>
+                        </a>
+
+
+                        <a href="https://github.com/parikshitshukla30"
+                            target="_blank"
+                            class="contact-link">
+                            <span>GitHub</span>
+                            <strong>
+                                parikshitshukla30
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </strong>
+                        </a>
+
+
+                        <a href="https://linkedin.com/in/parikshit-shukla-ps2004/"
+                            target="_blank"
+                            class="contact-link">
+                            <span>LinkedIn</span>
+                            <strong>
+                                Parikshit Shukla
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </strong>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="footer-container">
+
+            <div class="footer-logo">
+                PS<span>.</span>
+            </div>
+
+            <p>
+                Designed & built by Parikshit Shukla
+            </p>
+
+            <p>
+                © <span id="year"></span> All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
